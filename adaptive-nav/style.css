@@ -1,0 +1,145 @@
+/* HW2-> Am folosit % la big-paddings pentru ca celulele sa fie proportionale fata de fereastra, nu fata de texte!*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+}
+.navbar-wrapper {
+    background: linear-gradient(#333, #444, #222);
+}
+.navbar {
+    display: table;
+    width: 90%;
+    height: 3em;
+    margin: 0 auto;
+}
+.navbar ul {
+    display: table-row;
+}
+.navbar ul li {
+    display: table-cell;
+    vertical-align: middle;
+    /* border: 1px solid white; */
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li.main{
+    text-align: right;
+    
+}
+.navbar ul li.main:nth-child(2) {
+    padding-left: 20%;
+}
+.navbar ul li.main:nth-child(4) {
+    padding-right: 6%;
+}
+.navbar ul li.contacts {
+    text-align: left;
+}
+.navbar ul li.contacts:nth-child(5) {
+    padding-left: 6%;
+}
+.navbar ul li.contacts:nth-child(7) {
+    padding-right: 20%;
+}
+.navbar ul li.user {
+    text-align: right;
+    
+}
+.navbar .brand img{
+    height: 3em;
+    position: relative;
+    top: 15px;
+
+}
+.navbar .brand span{
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+}
+@media (max-width:1400px) {
+    .navbar ul li.main:nth-child(2) {
+        padding-left: 18%;
+    }
+    .navbar ul li.main:nth-child(4) {
+        padding-right: 5%;
+    }
+    .navbar ul li.contacts:nth-child(5) {
+        padding-left: 5%;  
+    }
+    .navbar ul li.contacts:nth-child(7) {
+        padding-right: 18%;
+    }
+}
+@media (max-width:1200px) {
+    .navbar ul li.main:nth-child(2) {
+        padding-left: 14%;
+    }
+    .navbar ul li.main:nth-child(4) {
+        padding-right: 4%;
+    }
+    .navbar ul li.contacts:nth-child(5) {
+        padding-left: 4%;
+    }
+    .navbar ul li.contacts:nth-child(7) {
+        padding-right: 14%;
+    }
+}
+@media (max-width:1000px) {
+    .navbar ul li.contacts:nth-child(5) .phone-nr{
+        display: none;
+        }
+        .navbar ul li.main:nth-child(2) {
+            padding-left: 11%;
+        }
+        .navbar ul li.main:nth-child(4) {
+            padding-right: 3%;
+        }
+        .navbar ul li.contacts:nth-child(5) {
+            padding-left: 3%;
+        }
+        .navbar ul li.contacts:nth-child(7) {
+            padding-right: 11%;
+        }
+    
+}
+@media (max-width:800px) {
+    .navbar ul li.main:nth-child(2) {
+        display: none;
+    }
+    .navbar ul li.contacts:nth-child(6) {
+        display: none;
+    }
+    .navbar ul li.main:nth-child(3) {
+        padding-left: 9%;
+    }
+    .navbar ul li.main:nth-child(4) {
+        padding-right: 3.5%;
+    }
+    .navbar ul li.contacts:nth-child(5) {
+        padding-left: 3.5%;
+    }
+    .navbar ul li.contacts:nth-child(7) {
+        padding-right: 9%;
+    }
+}
+@media (max-width:600px) {
+    .navbar ul li:nth-child(1) span{
+        display: none;
+    }
+    .navbar ul li.main:nth-child(3) {
+        padding-left: 12%;
+    }
+    .navbar ul li.main:nth-child(4) {
+        padding-right: 5%;
+    }
+    .navbar ul li.contacts:nth-child(5) {
+        padding-left: 5%;
+    }
+    .navbar ul li.contacts:nth-child(7) {
+        padding-right: 12%;
+    }
+}
